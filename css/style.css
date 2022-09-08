@@ -4,56 +4,44 @@
   height: 100px;
 }
 
-.field-position {
-  position: relative;
-  width: 210px;
-  height: 210px;
+.field {
   background-color: #cc0001;
   border: 1px solid black;
+  width: 210px;
+  height: 210px;
 }
-
-.horizontal-position {
-  position: relative;
-  width: 20%;
-  height: 50%;
+.rect {
   background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  top: 25%;
   border-radius: 8px;
 }
 
-.vertical-position {
-  position: relative;
-  width: 50%;
-  height: 20%;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 10%;
-  border-radius: 8px;
-}
-
-.field-transform {
-  width: 210px;
-  height: 210px;
-  background-color: #cc0001;
-  border: 1px solid black;
-  align-items: center;
-}
-.horizontal-transform {
+.horizontal {
   width: 105px;
   height: 42px;
-
-  background-color: white;
-  transform: translate(50%, 200%);
-  border-radius: 8px;
 }
-.vertical-transform {
+
+.vertical {
   width: 42px;
   height: 105px;
+}
 
-  background-color: white;
+.position .horizontal {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40%;
+}
+
+.position .vertical {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 5%;
+}
+
+.transform .horizontal {
+  transform: translate(50%, 200%);
+}
+.transform .vertical {
   transform: translate(200%, 10%);
-  border-radius: 8px;
 }
